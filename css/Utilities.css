@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/* Base style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 85%;
+  margin: auto;
+  height: auto;
+}
+section.header {
+  width: 100%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  border: 0;
+  font-weight: 600;
+  border-radius: 35px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-white {
+  color: var(--dark-cyan);
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  background-color: var(--pink);
+  color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(255, 82, 191, 0.3),
+    0 0 20px 0 rgba(255, 82, 191, 0.5);
+}
+
+.btn-lg {
+  padding: 20px 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.row .col {
+  flex-basis: 50%;
+}
+
+.row img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+

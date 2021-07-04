@@ -1,0 +1,264 @@
+/* Variables */
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --gray: hsl(208, 11%, 55%);
+  --white: #fff;
+}
+/* Variables */
+.header {
+  padding: 0 7.5%;
+  height: auto;
+  background-color: var(--pale-cyan);
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 8rem;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+  height: 70px;
+}
+
+.header .showcase {
+  padding: 1.5rem 0 4rem;
+}
+
+.header .showcase .col {
+  flex-basis: 45%;
+}
+.header .showcase .col:last-child {
+  flex-basis: 50%;
+}
+
+.header .showcase .col h1 {
+  font-weight: 700;
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.header .showcase .col p {
+  margin: 30px 0;
+}
+
+/* End of styling of showcase */
+
+/* Services */
+.services {
+  margin-bottom: 8rem;
+}
+.services .service-card {
+  border-radius: 15px;
+  margin: 40px 0;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 2rem 6rem;
+}
+.services .service-card .col:first-child {
+  flex-basis: 50%;
+}
+.services .service-card .col {
+  flex-basis: 40%;
+}
+
+.services .service-card .col h2 {
+  color: var(--dark-cyan);
+  margin: 10px 0;
+}
+
+.services .service-card .col p {
+  color: var(--gray);
+}
+
+/* Services */
+
+/* Call to action */
+.cta {
+  width: 100%;
+  height: auto;
+  background-color: var(--dark-cyan);
+  position: relative;
+  z-index: 1;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+}
+
+.cta .cta-box {
+  width: 60%;
+  margin: auto;
+  background-color: var(--white);
+  padding: 4rem 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cta .cta-box h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+
+.cta .cta-box > * {
+  margin: 10px 0;
+}
+/* Call to action */
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--dark-cyan);
+  padding: 4rem 7.5% 1rem;
+  color: #ffffffd3;
+}
+.footer a {
+  color: #ffffffd3;
+}
+.footer .footer-row {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-row .footer-col {
+  flex-basis: 400px;
+}
+
+.footer .footer-row .footer-col:not(.footer-col:first-child) {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-row .footer-col:not(.footer-col:first-child) ul li {
+  padding: 10px 0;
+}
+
+.footer .footer-row .footer-col:not(.footer-col:first-child) ul li a {
+  transition: 0.5s ease-in-out all;
+  padding-bottom: 5px;
+}
+.footer .footer-row .footer-col:not(.footer-col:first-child) ul li a:hover {
+  padding-left: 10px;
+  border-bottom: 1px solid var(--white);
+}
+
+.footer .footer-row .footer-col:last-child i {
+  margin: 0 15px;
+  padding: 0.5rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out all;
+}
+
+.footer .footer-row .footer-col:last-child i:hover {
+  background-color: var(--white);
+  color: var(--dark-cyan);
+}
+
+.footer .footer-row .footer-col:first-child {
+  flex-basis: 600px;
+}
+.footer .footer-row .footer-col:first-child div {
+  margin: 20px 0;
+}
+.footer .footer-row .footer-col:first-child > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-row .footer-col:first-child > div:nth-child(2) img {
+  margin-right: 20px;
+}
+.footer .footer-row .footer-col:first-child > div:nth-child(2) p {
+  font-size: 12px;
+}
+
+.footer .footer-row .footer-col:first-child > div:last-child img {
+  margin-right: 20px;
+}
+.footer > p {
+  margin: 40px 0 10px;
+  text-align: right;
+}
+/* Footer */
+
+/* Responsive */
+@media (max-width: 950px) {
+  .row,
+  .row.row-reverse {
+    flex-direction: column-reverse;
+  }
+  .row .col {
+    margin: 40px 0;
+  }
+
+  /* Header */
+  .nav .nav-brand img {
+    width: 130px;
+  }
+  /* Header */
+  /* Services */
+  .services .service-card {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  /* Services */
+  /* Cta */
+  .cta .cta-box {
+    width: 90%;
+  }
+  .cta .cta-box h1 {
+    font-size: 1.5rem;
+  }
+  /* Cta */
+  /* Footer */
+  .footer-row {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer .footer-row .footer-col:first-child {
+    flex-basis: 100%;
+  }
+  .footer .footer-row .footer-col {
+    margin: 10px 0;
+  }
+  .footer
+    .footer-row
+    .footer-col:not(.footer-col:first-child, .footer-col:last-child) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .footer .footer-row .footer-col:last-child {
+    flex-direction: row;
+    flex-basis: 100%;
+  }
+  .footer > p {
+    text-align: center;
+  }
+  /* Footer */
+}
+
+@media (max-width: 500px) {
+  .nav a {
+    padding: 10px 20px;
+  }
+}
